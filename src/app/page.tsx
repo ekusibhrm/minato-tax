@@ -44,9 +44,9 @@ export default function Home() {
           fill
           priority
           sizes="100vw"
-          className="object-cover opacity-[0.16]"
+          className="object-cover opacity-[0.42]"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/50 via-background/85 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/30 via-background/70 to-background" />
         <div className="relative mx-auto max-w-6xl px-6 py-20 sm:py-28">
           <span className="text-xs font-medium tracking-[0.2em] text-primary">
             TAX ACCOUNTANT
