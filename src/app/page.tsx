@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import NumberMark from "@/components/NumberMark";
 import { services } from "@/lib/services";
@@ -36,8 +37,17 @@ const news = [
 export default function Home() {
   return (
     <>
-      <section className="border-b border-border">
-        <div className="mx-auto max-w-6xl px-6 py-20 sm:py-28">
+      <section className="relative overflow-hidden border-b border-border">
+        <Image
+          src="/images/hero-office.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-[0.16]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/50 via-background/85 to-background" />
+        <div className="relative mx-auto max-w-6xl px-6 py-20 sm:py-28">
           <span className="text-xs font-medium tracking-[0.2em] text-primary">
             TAX ACCOUNTANT
           </span>
